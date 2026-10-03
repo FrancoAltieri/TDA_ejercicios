@@ -4,4 +4,13 @@
 
 #No utilizar **.
 def potencia(base, exponente): 
-    pass
+    if exponente == 0:
+        return 1
+    
+    return base * potencia(base,exponente - 1)
+
+
+
+if __name__ == "__main__":
+    numero = potencia(3,4)
+    print(numero)

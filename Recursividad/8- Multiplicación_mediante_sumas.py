@@ -3,4 +3,11 @@
 #No utilizar *.
 
 def multiplicar(a, b): 
-    pass
+    if b < 1:
+        return 0
+    
+    return a + multiplicar(a,b-1)
+
+
+if __name__ == "__main__":
+    print(multiplicar(2,32))
